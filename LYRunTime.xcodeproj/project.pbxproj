@@ -15,6 +15,10 @@
 		011CCF0D227C625A00F5ECDA /* LYTestPresentt.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF05227C625A00F5ECDA /* LYTestPresentt.m */; };
 		011CCF0E227C625A00F5ECDA /* LYOtherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF06227C625A00F5ECDA /* LYOtherTest.m */; };
 		011CCF0F227C625A00F5ECDA /* LYOtherTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF07227C625A00F5ECDA /* LYOtherTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		011CCF19227D685200F5ECDA /* RSSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF17227D685200F5ECDA /* RSSwizzle.h */; };
+		011CCF1A227D685200F5ECDA /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF18227D685200F5ECDA /* RSSwizzle.m */; };
+		011CCF21227D71D200F5ECDA /* LYOtherTest+Rsswizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF1F227D71D200F5ECDA /* LYOtherTest+Rsswizzle.h */; };
+		011CCF22227D71D200F5ECDA /* LYOtherTest+Rsswizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF20227D71D200F5ECDA /* LYOtherTest+Rsswizzle.m */; };
 		01EC9110227AE01000C795FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC910F227AE01000C795FF /* AppDelegate.m */; };
 		01EC9113227AE01000C795FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC9112227AE01000C795FF /* ViewController.m */; };
 		01EC9116227AE01000C795FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EC9114227AE01000C795FF /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		011CCF05227C625A00F5ECDA /* LYTestPresentt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTestPresentt.m; sourceTree = "<group>"; };
 		011CCF06227C625A00F5ECDA /* LYOtherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYOtherTest.m; sourceTree = "<group>"; };
 		011CCF07227C625A00F5ECDA /* LYOtherTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYOtherTest.h; sourceTree = "<group>"; };
+		011CCF17227D685200F5ECDA /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
+		011CCF18227D685200F5ECDA /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
+		011CCF1F227D71D200F5ECDA /* LYOtherTest+Rsswizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYOtherTest+Rsswizzle.h"; sourceTree = "<group>"; };
+		011CCF20227D71D200F5ECDA /* LYOtherTest+Rsswizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LYOtherTest+Rsswizzle.m"; sourceTree = "<group>"; };
 		01EC910B227AE01000C795FF /* LYRunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYRunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EC910E227AE01000C795FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01EC910F227AE01000C795FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,8 +74,19 @@
 				011CCF05227C625A00F5ECDA /* LYTestPresentt.m */,
 				011CCF03227C625A00F5ECDA /* NSObject+LYAddProperty.h */,
 				011CCF04227C625A00F5ECDA /* NSObject+LYAddProperty.m */,
+				011CCF1F227D71D200F5ECDA /* LYOtherTest+Rsswizzle.h */,
+				011CCF20227D71D200F5ECDA /* LYOtherTest+Rsswizzle.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		011CCF10227D681300F5ECDA /* RSSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				011CCF17227D685200F5ECDA /* RSSwizzle.h */,
+				011CCF18227D685200F5ECDA /* RSSwizzle.m */,
+			);
+			path = RSSwizzle;
 			sourceTree = "<group>";
 		};
 		01EC9102227AE01000C795FF = {
@@ -89,6 +108,7 @@
 		01EC910D227AE01000C795FF /* LYRunTime */ = {
 			isa = PBXGroup;
 			children = (
+				011CCF10227D681300F5ECDA /* RSSwizzle */,
 				011CCEF8227C5D5B00F5ECDA /* Test */,
 				01EC910E227AE01000C795FF /* AppDelegate.h */,
 				01EC910F227AE01000C795FF /* AppDelegate.m */,
@@ -110,9 +130,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011CCF21227D71D200F5ECDA /* LYOtherTest+Rsswizzle.h in Headers */,
 				011CCF0B227C625A00F5ECDA /* NSObject+LYAddProperty.h in Headers */,
 				011CCF09227C625A00F5ECDA /* LYTestPresentt.h in Headers */,
 				011CCF0F227C625A00F5ECDA /* LYOtherTest.h in Headers */,
+				011CCF19227D685200F5ECDA /* RSSwizzle.h in Headers */,
 				011CCF08227C625A00F5ECDA /* LYTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,9 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011CCF22227D71D200F5ECDA /* LYOtherTest+Rsswizzle.m in Sources */,
 				011CCF0C227C625A00F5ECDA /* NSObject+LYAddProperty.m in Sources */,
 				011CCF0A227C625A00F5ECDA /* LYTest.m in Sources */,
 				01EC9113227AE01000C795FF /* ViewController.m in Sources */,
+				011CCF1A227D685200F5ECDA /* RSSwizzle.m in Sources */,
 				011CCF0E227C625A00F5ECDA /* LYOtherTest.m in Sources */,
 				01EC911E227AE01100C795FF /* main.m in Sources */,
 				01EC9110227AE01000C795FF /* AppDelegate.m in Sources */,
@@ -338,7 +362,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7RG6FG6G3;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = LYRunTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +381,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q7RG6FG6G3;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = LYRunTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
