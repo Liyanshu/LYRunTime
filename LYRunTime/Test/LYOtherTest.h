@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LYOtherTest : NSObject
 
 @property (copy, nonatomic) NSString * otName;
+@property (copy, nonatomic) NSString * otSex;
 
 - (void)otPublicMethod;
 

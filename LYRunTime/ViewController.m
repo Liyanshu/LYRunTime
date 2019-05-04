@@ -58,6 +58,22 @@
 //    objc_msgSend();
     objc_msgSend(otPro,@selector(otPublicMethod));
 //    [otPro performSelector:@selector(run:) withObject:@10];
+    
+    //8.测试字典转模型
+    NSDictionary * testDic = [NSDictionary dictionaryWithObjectsAndKeys:@"LiYan",@"otName",@"男",@"otSex",@"otPrivateName",@"otPrivateName", nil];
+    LYOtherTest * testModel = [[LYOtherTest alloc] initWithDic:testDic];
+    NSLog(@"testModelName:%@",testModel.otName);
+    
+    //9.测试归档
+    NSString * path = [NSString stringWithFormat:@"%@/test.plist",NSHomeDirectory()];
+    BOOL success = [NSKeyedArchiver archiveRootObject:testModel toFile:path];
+    if (success) {
+        NSLog(@"归档成功");
+    }
+    
+    //10.测试解档
+    LYOtherTest * testModel2 = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSLog(@"otName:%@",testModel2.otName);
 }
 
 /**

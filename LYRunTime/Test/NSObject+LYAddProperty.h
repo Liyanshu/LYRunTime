@@ -16,6 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface NSObject (LYAddProperty)
 @property (copy, nonatomic)NSString * name;
+
+-(instancetype)initWithDic:(NSDictionary *)dic;
+
+// 解档所有属性
+- (void)initAllPropertiesWithCoder:(NSCoder *)coder;
+
+// 归档所有属性
+- (void)encodeAllPropertiesWithCoder:(NSCoder *)coder;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 
 #import "LYOtherTest.h"
 #import <objc/message.h>
+#import "NSObject+LYAddProperty.h"
 @interface LYOtherTest();
 @property (copy , nonatomic) NSString * otPrivateName;
 
@@ -21,6 +22,15 @@ void runPace(id self, SEL _cmd, NSString *name, NSNumber *meter){
     NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
+-(id)initWithCoder:(NSCoder *)coder{
+    if (self = [super init]) {
+        [self initAllPropertiesWithCoder:coder];
+    }
+    return self;
+}
+-(void)encodeWithCoder:(NSCoder *)coder{
+    [self encodeAllPropertiesWithCoder:coder];
+}
 +(void)otClassMethod{
     NSLog(@"otClassMethod");
 }
