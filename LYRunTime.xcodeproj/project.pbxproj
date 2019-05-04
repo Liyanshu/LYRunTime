@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011CCF08227C625A00F5ECDA /* LYTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF00227C625A00F5ECDA /* LYTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		011CCF09227C625A00F5ECDA /* LYTestPresentt.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF01227C625A00F5ECDA /* LYTestPresentt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		011CCF0A227C625A00F5ECDA /* LYTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF02227C625A00F5ECDA /* LYTest.m */; };
+		011CCF0B227C625A00F5ECDA /* NSObject+LYAddProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF03227C625A00F5ECDA /* NSObject+LYAddProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		011CCF0C227C625A00F5ECDA /* NSObject+LYAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF04227C625A00F5ECDA /* NSObject+LYAddProperty.m */; };
+		011CCF0D227C625A00F5ECDA /* LYTestPresentt.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF05227C625A00F5ECDA /* LYTestPresentt.m */; };
+		011CCF0E227C625A00F5ECDA /* LYOtherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 011CCF06227C625A00F5ECDA /* LYOtherTest.m */; };
+		011CCF0F227C625A00F5ECDA /* LYOtherTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 011CCF07227C625A00F5ECDA /* LYOtherTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01EC9110227AE01000C795FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC910F227AE01000C795FF /* AppDelegate.m */; };
 		01EC9113227AE01000C795FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EC9112227AE01000C795FF /* ViewController.m */; };
 		01EC9116227AE01000C795FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EC9114227AE01000C795FF /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011CCF00227C625A00F5ECDA /* LYTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTest.h; sourceTree = "<group>"; };
+		011CCF01227C625A00F5ECDA /* LYTestPresentt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTestPresentt.h; sourceTree = "<group>"; };
+		011CCF02227C625A00F5ECDA /* LYTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTest.m; sourceTree = "<group>"; };
+		011CCF03227C625A00F5ECDA /* NSObject+LYAddProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LYAddProperty.h"; sourceTree = "<group>"; };
+		011CCF04227C625A00F5ECDA /* NSObject+LYAddProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LYAddProperty.m"; sourceTree = "<group>"; };
+		011CCF05227C625A00F5ECDA /* LYTestPresentt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTestPresentt.m; sourceTree = "<group>"; };
+		011CCF06227C625A00F5ECDA /* LYOtherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYOtherTest.m; sourceTree = "<group>"; };
+		011CCF07227C625A00F5ECDA /* LYOtherTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYOtherTest.h; sourceTree = "<group>"; };
 		01EC910B227AE01000C795FF /* LYRunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYRunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EC910E227AE01000C795FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01EC910F227AE01000C795FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011CCEF8227C5D5B00F5ECDA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				011CCF07227C625A00F5ECDA /* LYOtherTest.h */,
+				011CCF06227C625A00F5ECDA /* LYOtherTest.m */,
+				011CCF00227C625A00F5ECDA /* LYTest.h */,
+				011CCF02227C625A00F5ECDA /* LYTest.m */,
+				011CCF01227C625A00F5ECDA /* LYTestPresentt.h */,
+				011CCF05227C625A00F5ECDA /* LYTestPresentt.m */,
+				011CCF03227C625A00F5ECDA /* NSObject+LYAddProperty.h */,
+				011CCF04227C625A00F5ECDA /* NSObject+LYAddProperty.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		01EC9102227AE01000C795FF = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +89,7 @@
 		01EC910D227AE01000C795FF /* LYRunTime */ = {
 			isa = PBXGroup;
 			children = (
+				011CCEF8227C5D5B00F5ECDA /* Test */,
 				01EC910E227AE01000C795FF /* AppDelegate.h */,
 				01EC910F227AE01000C795FF /* AppDelegate.m */,
 				01EC9111227AE01000C795FF /* ViewController.h */,
@@ -73,11 +105,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		011CCEFC227C61F100F5ECDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011CCF0B227C625A00F5ECDA /* NSObject+LYAddProperty.h in Headers */,
+				011CCF09227C625A00F5ECDA /* LYTestPresentt.h in Headers */,
+				011CCF0F227C625A00F5ECDA /* LYOtherTest.h in Headers */,
+				011CCF08227C625A00F5ECDA /* LYTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		01EC910A227AE01000C795FF /* LYRunTime */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01EC9121227AE01100C795FF /* Build configuration list for PBXNativeTarget "LYRunTime" */;
 			buildPhases = (
+				011CCEFC227C61F100F5ECDA /* Headers */,
 				01EC9107227AE01000C795FF /* Sources */,
 				01EC9108227AE01000C795FF /* Frameworks */,
 				01EC9109227AE01000C795FF /* Resources */,
@@ -141,9 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011CCF0C227C625A00F5ECDA /* NSObject+LYAddProperty.m in Sources */,
+				011CCF0A227C625A00F5ECDA /* LYTest.m in Sources */,
 				01EC9113227AE01000C795FF /* ViewController.m in Sources */,
+				011CCF0E227C625A00F5ECDA /* LYOtherTest.m in Sources */,
 				01EC911E227AE01100C795FF /* main.m in Sources */,
 				01EC9110227AE01000C795FF /* AppDelegate.m in Sources */,
+				011CCF0D227C625A00F5ECDA /* LYTestPresentt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
