@@ -11,9 +11,11 @@
 #import <objc/message.h>
 #import "NSObject+LYAddProperty.h"
 #import "LYOtherTest.h"
-
+#import "LYTest.h"
 #define  LY_FREE(a) if(a){free(a);a=NULL;}
 @interface ViewController ()
+
+@property (strong, nonatomic) LYTest * lyTest;
 @end
 
 @implementation ViewController
@@ -74,6 +76,14 @@
     //10.测试解档
     LYOtherTest * testModel2 = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     NSLog(@"otName:%@",testModel2.otName);
+    
+    //11.测试KVO
+    self.lyTest = [LYTest new];
+    [self.lyTest ly_addObserver:self forKey:@"sex" Options:NSKeyValueObservingOptionNew ChangClock:^(id  _Nonnull observerObject, NSString * _Nonnull key, id  _Nonnull oldValue, id  _Nonnull newValue) {
+        NSLog(@"oldValue:%@",oldValue);
+        NSLog(@"newValue：%@",newValue);
+    }];
+    
 }
 
 /**
@@ -191,6 +201,9 @@
     NSLog(@"这里是在ViewController中进行的函数替换");
 }
 
+- (IBAction)kvoClick:(id)sender {
+    [self.lyTest setValue:@"男" forKey:@"sex"];
+}
 
 
 -(NSString *)description{

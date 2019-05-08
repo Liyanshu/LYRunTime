@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface LYTest : LYTestPresentt
 
+@property (copy, nonatomic) NSString * sex;
 @end
 
 NS_ASSUME_NONNULL_END
